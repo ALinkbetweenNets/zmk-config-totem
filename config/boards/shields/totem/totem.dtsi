@@ -74,12 +74,6 @@
             , <&key_physical_attrs 100 100 100 350 0 0 0>
         ;};
 
-    physical_layout0: physical_layout_0 {
-        compatible = "zmk,physical-layout";
-        display-name = "Default Layout";
-
-};
-
     kscan0: kscan_0 {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
@@ -92,8 +86,5 @@
             , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
     };
-};
-    &physical_layout0 {
-    kscan = <&kscan0>; // Label of the kscan node this layout uses
-    transform = <&default_transform>; // Label of the matrix transform this layout uses
+
 };
