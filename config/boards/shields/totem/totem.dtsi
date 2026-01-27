@@ -72,7 +72,7 @@
             , <&key_physical_attrs 100 100 920 365 0 0 0>
             , <&key_physical_attrs 100 100 100 350 0 0 0>
         ;};
-        &physical_layout0 {
+    physical_layout0 {
     kscan = <&kscan0>; // Label of the kscan node this layout uses
     transform = <&default_transform>; // Label of the matrix transform this layout uses
 };
