@@ -33,8 +33,7 @@
         display-name = "Default Layout";
         transform = <&default_transform>;
         kscan = <&kscan0>;
-        keys =
-            , <&key_physical_attrs 100 100 100 140 0 0 0>
+        keys =<&key_physical_attrs 100 100 100 140 0 0 0>
             , <&key_physical_attrs 100 100 200 060 0 0 0>
             , <&key_physical_attrs 100 100 300 000 0 0 0>
             , <&key_physical_attrs 100 100 400 050 0 0 0>
