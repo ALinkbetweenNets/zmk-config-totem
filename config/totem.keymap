@@ -10,6 +10,173 @@
     combos {
         compatible = "zmk,combos";
 
+        combo0 {
+            timeout-ms = <40>;
+            key-positions = <10 11 12 13>;
+            bindings = <&kp LC(LALT)>;
+        };
+
+        combo1 {
+            timeout-ms = <40>;
+            key-positions = <33 32 31 30>;
+            bindings = <&kp LC(LALT)>;
+        };
+
+        combo2 {
+            timeout-ms = <40>;
+            key-positions = <11 12 13>;
+            bindings = <&kp LA(LGUI)>;
+        };
+
+        combo3 {
+            timeout-ms = <40>;
+            key-positions = <32 31 30>;
+            bindings = <&kp LA(LGUI)>;
+        };
+
+        combo4 {
+            timeout-ms = <40>;
+            key-positions = <11 12 13>;
+            bindings = <&kp LC(LGUI)>;
+        };
+
+        combo5 {
+            timeout-ms = <40>;
+            key-positions = <32 31 30>;
+            bindings = <&kp LC(LGUI)>;
+        };
+
+        combo6 {
+            timeout-ms = <40>;
+            key-positions = <5 7 8 6>;
+            bindings = <&kp LC(C)>;
+        };
+
+        combo7 {
+            timeout-ms = <40>;
+            key-positions = <28 27 26 25>;
+            bindings = <&kp LC(C)>;
+        };
+
+        combo8 {
+            timeout-ms = <40>;
+            key-positions = <0 1 2 3>;
+            bindings = <&kp ESC>;
+        };
+
+        combo9 {
+            timeout-ms = <40>;
+            key-positions = <23 22 21 20>;
+            bindings = <&kp ESC>;
+        };
+
+        combo10 {
+            timeout-ms = <40>;
+            key-positions = <12 13 19>;
+            bindings = <&kp LC(LSHIFT)>;
+        };
+
+        combo11 {
+            timeout-ms = <40>;
+            key-positions = <33 32 19>;
+            bindings = <&none>;
+        };
+
+        combo12 {
+            timeout-ms = <40>;
+            key-positions = <11 12>;
+            bindings = <&kp LALT>;
+        };
+
+        combo13 {
+            timeout-ms = <40>;
+            key-positions = <32 31>;
+            bindings = <&kp LALT>;
+        };
+
+        combo14 {
+            timeout-ms = <40>;
+            key-positions = <11 12>;
+            bindings = <&kp LGUI>;
+        };
+
+        combo15 {
+            timeout-ms = <40>;
+            key-positions = <32 31>;
+            bindings = <&kp LGUI>;
+        };
+
+        combo16 {
+            timeout-ms = <40>;
+            key-positions = <12 13>;
+            bindings = <&kp LCTRL>;
+        };
+
+        combo17 {
+            timeout-ms = <40>;
+            key-positions = <33 32>;
+            bindings = <&kp LCTRL>;
+        };
+
+        combo18 {
+            timeout-ms = <40>;
+            key-positions = <11 31>;
+            bindings = <&kp TAB>;
+        };
+
+        combo19 {
+            timeout-ms = <40>;
+            key-positions = <10 30>;
+            bindings = <&kp ESC>;
+        };
+
+        combo20 {
+            timeout-ms = <40>;
+            key-positions = <0 0>;
+            bindings = <&kp LCTRL>;
+        };
+
+        combo21 {
+            timeout-ms = <40>;
+            key-positions = <0 0>;
+            bindings = <&kp LCTRL>;
+        };
+
+        combo22 {
+            timeout-ms = <40>;
+            key-positions = <0 0 0>;
+            bindings = <&kp LC(LGUI)>;
+        };
+
+        combo23 {
+            timeout-ms = <40>;
+            key-positions = <0 0 0>;
+            bindings = <&kp LA(LGUI)>;
+        };
+
+        combo24 {
+            timeout-ms = <40>;
+            key-positions = <0 0>;
+            bindings = <&kp LGUI>;
+        };
+
+        combo25 {
+            timeout-ms = <40>;
+            key-positions = <0 0 0 0>;
+            bindings = <&kp LC(LALT)>;
+        };
+
+        combo26 {
+            timeout-ms = <40>;
+            key-positions = <33 32 19>;
+            bindings = <&kp LC(LSHIFT)>;
+        };
+
+        combo27 {
+            timeout-ms = <40>;
+            key-positions = <11 12 13 19>;
+            bindings = <&kp LC(LSHIFT)>;
+        };
         sz {
             bindings = <&szR>;
             key-positions = <1 12>;
