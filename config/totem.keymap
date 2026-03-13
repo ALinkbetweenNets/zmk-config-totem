@@ -466,50 +466,42 @@
         compatible = "zmk,keymap";
 
         alpha {
-            bindings = <
-        &ad_w               &ad_g          &kp D                     &ad_f                      &trans    &trans  &mt_double L L               &kp U                     &kp O          &kp Y
-        &lt_hmr_l_ad_c 2 0  &lt_hmr_l 1 S  &mt_hmr_l LEFT_CONTROL T  &mt_hrm_l_ad_h LEFT_ALT 0  &trans    &trans  &mt_hmr_r LEFT_ALT N         &mt_hmr_r LEFT_CONTROL E  &lt_hmr_r 1 A  &lt_hmr_r 2 I
-&trans  &trans              &trans         &kp M                     &mt_hmr_l LEFT_GUI P       &trans    &trans  &mt_hmr_comma_gt LEFT_GUI 0  &mt_dot_lt_ellipsis 0 0   &trans         &trans         &trans
-                                           &trans                    &mt_thumb LSHIFT R         &trans    &trans  &lt 3 SPACE                  &trans
-            >;
-        };
+bindings = <
+    &kp Z  &kp Y  &kp U  &kp A  &kp Q     &kp P  &kp B  &kp M  &kp L  &kp SQT
+    &kp C  &kp S  &kp I  &kp E  &kp O     &kp D  &kp T  &kp N  &kp R  &kp H
+    &kp TAB &kp V &kp X &kp LBKT &kp SEMI &kp RBKT &kp W &kp G &kp F &kp J &kp K &kp DOT
+                     &kp BSPC &tog 1 &kp LSHIFT &kp SPACE &tog 2 &kp ENTER
+>;
+         };
 
         sym {
-            bindings = <
-        &kp PRCNT  &kp AT    &kp PIPE   &kp AMPS  &trans    &trans  &kp CARET                &kp BSLH                 &kp DQT    &mt GRAVE TILDE
-        &kp HASH   &kp DLLR  &kp STAR   &kp EXCL  &trans    &trans  &mt_arrowfy MINUS MINUS  &mt_arrowfy EQUAL EQUAL  &kp COLON  &mt_append SEMI SEMI
-&trans  &trans     &trans    &kp QMARK  &kp FSLH  &trans    &trans  &kp UNDER                &kp PLUS                 &trans     &trans                &trans
-                             &trans     &trans    &trans    &trans  &trans                   &trans
-            >;
+bindings = <
+    &kp EQUAL &kp GRAVE &kp RA(8) &kp RA(9) &kp LS(NUBS)   &kp RA(MINUS) &kp LS(7) &kp LS(8) &kp LS(9) &kp NUBS
+    &kp RA(Q) &kp RA(NUBS) &kp RA(7) &kp RA(0) &kp RA(RBKT) &mt RALT ESC &trans &trans &trans &kp COMMA
+    &kp 9 &kp 8 &kp 7 &kp RBKT &kp 0 &kp 6 &kp 5 &kp 4 &kp SLASH &kp DOT &kp 3 &kp 2
+                     &kp 1 &kp NUHS &trans &trans &trans &tog 3
+>;
         };
 
         num {
-            bindings = <
-        &trans  &trans  &kp LBKT  &kp RBKT  &trans    &trans  &kp N7    &kp N8    &kp N9  &trans
-        &trans  &kp N3  &kp N2    &kp N1    &trans    &trans  &kp N4    &kp N5    &kp N6  &trans
-&trans  &trans  &trans  &kp LPAR  &kp RPAR  &trans    &trans  &kp RBRC  &kp LBRC  &trans  &trans  &trans
-                        &trans    &kp N0    &trans    &trans  &trans    &trans
-            >;
-        };
+bindings = <
+    &mkp MB4 &mkp MB3 &mkp MB2 &mkp MB1 &none   &mmv LEFT &mmv UP &mmv DOWN &mmv RIGHT &none
+    &mwh LEFT &mwh UP &mwh DOWN &mwh RIGHT &none &none &none &kp DELETE &tog 3 &trans
+    &kp INSERT &kp PG_UP &kp PG_DN &kp PSCRN &none &kp RIGHT &kp UP &kp DOWN &kp LEFT &none &kp CAPS &kp HOME
+                     &kp END &kp APP &trans &trans &trans &trans
+>;
+         };
 
         nav {
-            bindings = <
-        &trans   &kp TAB   &msc SCRL_UP      &msc SCRL_DOWN  &trans    &trans  &kp HOME   &kp END    &kp DEL  &trans
-        &kp ESC  &kp BSPC  &kp LEFT_CONTROL  &mt LALT ENTER  &trans    &trans  &kp LEFT   &kp DOWN   &kp UP   &kp RIGHT
-&trans  &trans   &trans    &trans            &kp LEFT_GUI    &trans    &trans  &kp PG_DN  &kp PG_UP  &trans   &trans     &trans
-                           &trans            &kp LSHIFT      &trans    &trans  &trans     &trans
-            >;
-        };
+bindings = <
+    &none &none &none &none &kp VOL_UP   &none &kp C_PREV &kp C_PLAY_PAUSE &kp C_NEXT &kp VOL_DOWN
+    &none &none &none &none &kp MUTE     &none &trans &trans &trans &kp F12
+    &kp F9 &kp F8 &kp F7 &kp C_BRI_UP &kp F11 &kp F6 &kp F5 &kp F4 &kp C_BRI_DN &kp F10 &kp F3 &kp F2
+                     &kp F1 &kp F20 &trans &trans &trans &trans
+>;
+         };
 
-        func {
-            bindings = <
-        &trans  &kp C_VOL_DN  &kp C_VOL_UP         &kp C_MUTE       &trans    &trans  &kp PSCRN        &kp F11       &kp F12  &trans
-        &kp F1  &kp F2        &mt LEFT_CONTROL F3  &mt LEFT_ALT F4  &trans    &trans  &mt LEFT_ALT F7  &mt LCTRL F8  &kp F9   &kp F10
-&trans  &trans  &trans        &trans               &mt LGUI F5      &trans    &trans  &mt RGUI F6      &trans        &trans   &trans   &trans
-                              &trans               &kp LSHIFT       &trans    &trans  &trans           &trans
-            >;
-        };
-    };
+            };
 
     conditional_layers { compatible = "zmk,conditional-layers"; };
 };
