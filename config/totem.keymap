@@ -580,7 +580,7 @@
 bindings = <
     &kp Z  &kp Y  &kp U  &kp A  &kp Q     &kp P  &kp B  &kp M  &kp L  &kp SQT
     &kp C  &kp S  &kp I  &kp E  &kp O     &kp D  &kp T  &kp N  &kp R  &kp H
-    &kp TAB &kp V &kp X &kp LBKT &kp SEMI &kp RBKT        &kp W &kp G &kp F &kp J &kp K &kp DOT
+    &kp TAB &kp V &kp X &kp LBKT &kp APOS &kp SEMI        &kp W &kp G &kp F &kp J &kp K &kp DOT
                      &kp BSPC &tog 1 &kp LSHIFT &kp SPACE &tog 2 &kp ENTER
 >;
          };
