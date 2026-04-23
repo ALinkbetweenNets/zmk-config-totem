@@ -634,17 +634,17 @@
 bindings = <
     &kp Z  &kp Y  &kp U  &kp A  &kp Q     &kp P  &kp B  &kp M  &kp L  &kp SQT
     &kp C  &kp S  &kp I  &kp E  &kp O     &kp D  &kp T  &kp N  &kp R  &kp H
-    &kp TAB &kp V &kp X &kp LBKT &kp APOS &kp SEMI        &kp W &kp G &kp F &kp J &kp K &kp DOT
-                     &kp BSPC &tog 1 &kp LSHIFT &kp SPACE &tog 2 &kp ENTER
+    &kp TAB &kp V &kp X &kp LBKT &kp APOS &kp SEMI        &kp W &kp G &kp F &kp J &kp K &kp RALT
+                     &kp BSPC &mo 1 &kp LSHIFT &kp SPACE &mo 2 &kp ENTER
 >;
          };
 
         sym {
 bindings = <
-    &kp EQUAL &kp GRAVE &kp RA(8) &kp RA(9) &kp LS(NUBS)   &kp RA(MINUS) &kp LS(7) &kp LS(8) &kp LS(9) &kp NUBS
-    &kp RA(Q) &kp RA(NUBS) &kp RA(7) &kp RA(0) &kp RA(RBKT) &mt RALT ESC &trans &trans &trans &kp COMMA
-    &kp 9 &kp 8 &kp 7 &kp RBKT &kp 0 &kp 6 &kp 5 &kp 4 &kp SLASH &kp DOT &kp 3 &kp 2
-                     &kp 1 &kp NUHS &trans &trans &trans &tog 3
+    &kp EQUAL &kp GRAVE &kp RA(8) &kp RA(9) &kp LS(NUBS)   &kp PLUS &kp 7 &kp 8 &kp 9 &kp COMMA
+    &kp RA(Q) &kp RA(7) &kp RA(8) &kp RA(9) &kp NUBS &mt MINUS &kp 4 &kp 5 &kp 6 &kp 0
+    &kp RA(DOT) &kp RA(Q) &kp RA(NUBS) &kp RA(7) &kp RA(0) &kp RA(PLUS)           &kp(NUBS) &kp 1 &kp 2 &kp 3 &kp DOT &trans
+                     &trans &trans &trans &trans &mo 3 &trans
 >;
         };
 
