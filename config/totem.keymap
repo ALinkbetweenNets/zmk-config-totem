@@ -1,3 +1,5 @@
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 400
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -363,17 +365,33 @@
             max-delay-ms = <200>;
         };
 
+        ad_h: ad_h {
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "ADAPTIVE_H";
+            #binding-cells = <0>;
+            defaults = <&kp H>;
+            antecedents = <
+                R
+            >;
+
+            bindings = <
+                &kp R
+            >;
+
+            max-delay-ms = <200>;
+        };
+
         ad_w: ad_w {
             compatible = "zmk,behavior-antecedent-morph";
             label = "ADAPTIVE_W";
             #binding-cells = <0>;
             defaults = <&kp W>;
             antecedents = <
-                D
+                D      U        N
             >;
 
             bindings = <
-                &kp J
+                &kp J  &kp SQT  &kp SQT
             >;
 
             max-delay-ms = <200>;
@@ -490,7 +508,7 @@
         mt_thumb: mt_thumb {
             compatible = "zmk,behavior-hold-tap";
             label = "MT_THUMB";
-            bindings = <&kp>, <&kp>;
+            bindings = <&singleSk>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <140>;
@@ -522,8 +540,30 @@
             bindings = <&double>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <190>;
+            tapping-term-ms = <150>;
             flavor = "tap-preferred";
+        };
+
+        mt_dot_lt_ellipsis: mt_dot_lt_ellipsis {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_DOT_LT_ELLIPSIS";
+            bindings = <&ellipsis>, <&dot_lt>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            flavor = "tap-preferred";
+        };
+
+        mt_hrm_l_ad_h: mt_hrm_l_ad_h {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MT_HRM_L_AD_H";
+            bindings = <&kp>, <&ad_h>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <250>;
+            flavor = "balanced";
+            hold-trigger-key-positions = <15 5 6 7 17 16 26 27 28 29 18 8 9 19 30 31 32 33 34 36 37 35>;
+            require-prior-idle-ms = <30>;
         };
     };
 
@@ -570,6 +610,20 @@
             #binding-cells = <1>;
             bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "DOUBLE";
+        };
+
+        ellipsis: ellipsis {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOT &kp DOT &kp DOT>;
+            label = "ELLIPSIS";
+        };
+
+        singleSk: singleSk {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &sk MACRO_PLACEHOLDER>;
+            label = "SINGLESK";
         };
     };
 
