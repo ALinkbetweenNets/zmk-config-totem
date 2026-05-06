@@ -641,9 +641,9 @@ bindings = <
 
         sym {
 bindings = <
-    &kp EQUAL &kp GRAVE &kp RA(8) &kp RA(9) &kp LS(NUBS)   &kp RBKT &kp 7 &kp 8 &kp 9 &kp COMMA
-    &kp RA(MINUS) &kp LS(7) &kp LS(8) &kp LS(9) &kp NUBS   &kp FSLH &kp 4 &kp 5 &kp 6 &kp 0
-    &mt RALT DOT &kp RA(Q) &kp RA(NUBS) &kp RA(7) &kp RA(0) &kp RA(RBKT)           &kp NUHS &kp 1 &kp 2 &kp 3 &kp DOT &trans
+    &kp EQUAL &kp GRAVE &kp RA(N8) &kp RA(N9) &kp LS(NUBS)   &kp RBKT &kp N7 &kp N8 &kp N9 &kp COMMA
+    &kp RA(MINUS) &kp LS(N7) &kp LS(N8) &kp LS(N9) &kp NUBS   &kp FSLH &kp N4 &kp N5 &kp N6 &kp N0
+    &mt RALT DOT &kp RA(Q) &kp RA(NUBS) &kp RA(N7) &kp RA(N0) &kp RA(RBKT)           &kp NUHS &kp N1 &kp N2 &kp N3 &kp DOT &trans
                      &trans &trans &trans &trans &mo 3 &trans
 >;
         };
